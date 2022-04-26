@@ -66,39 +66,7 @@ class DialogClass : DialogFragment(){
             MainActivity.displayList.add(newMember)
             MainActivity.memberAdapter.notifyDataSetChanged()
 
-            //// Code for updating JSON file (Cancelled)
 
-//            val path = "hipo.json"
-//            var hipoObj = JSONObject()
-//            var mainJSONObj = JSONObject()
-//            val gson = Gson()
-//            val gsonPretty = GsonBuilder().setPrettyPrinting().create()
-//
-//            hipoObj.put("position" , position)
-//            hipoObj.put("years_in_hipo" , years)
-//
-//
-//            var jsonNewMember = JSONObject()
-//            jsonNewMember.put("name", name)
-//            jsonNewMember.put("age", age)
-//            jsonNewMember.put("location", location)
-//            jsonNewMember.put("github", github)
-//            jsonNewMember.put("hipo", hipoObj)
-//
-//            mainJSONObj.put("company" , "Hipo")
-//            mainJSONObj.put( "team" ,  "Android")
-//
-//            val jsonMembersArray = MainActivity.jsonobj.getJSONArray("members")
-//            jsonMembersArray.put(jsonNewMember)
-//            mainJSONObj.put( "members" ,  jsonMembersArray)
-//
-//            val prettyJsonObject : String = gsonPretty.toJson(mainJSONObj)
-//            Log.d("TEST  ",prettyJsonObject)
-
-           // File("hipo.json").writeText(prettyJsonObject) // that's not gonna work !!!
-
-
-            //
             dismiss()
         }
 

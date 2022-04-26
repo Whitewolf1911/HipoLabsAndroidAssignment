@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
     companion object{
 
         lateinit var memberAdapter : MemberAdapter
-        lateinit var jsonobj : JSONObject
         var displayList = mutableListOf<Members>()
 
     }
@@ -42,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         // fetch JSON and add them into list
         val obj = JSONObject(getJSONFromAssets()!!)
         val membersArray = obj.getJSONArray("members")
-        jsonobj = obj
+
 
         for(i in 0 until membersArray.length()){
             val member = membersArray.getJSONObject(i)

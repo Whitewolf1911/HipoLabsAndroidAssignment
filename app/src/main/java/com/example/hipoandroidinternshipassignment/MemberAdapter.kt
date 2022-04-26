@@ -40,32 +40,4 @@ class MemberAdapter (private val members: MutableList<Members>) :RecyclerView.Ad
         return members.size
     }
 
-//    override fun getFilter(): Filter {
-//
-//        return object : Filter() {
-//            override fun performFiltering(constraint: CharSequence?): FilterResults {
-//                val charSearch = constraint.toString()
-//                if (charSearch.isEmpty()) {
-//                    membersListFiltered = Members.myMemberList
-//                } else {
-//                    val resultList = mutableListOf<Members>()
-//                    for (it in Members.myMemberList) {
-//                        if (it.name.toLowerCase(Locale.ROOT).contains(charSearch.toLowerCase(Locale.ROOT))) {
-//                            resultList.add(it)
-//                        }
-//                    }
-//                    membersListFiltered = resultList
-//                }
-//                val filterResults = FilterResults()
-//                filterResults.values = membersListFiltered
-//                return filterResults
-//            }
-//
-//            override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-//
-//                membersListFiltered = results?.values as MutableList<Members>
-//                notifyDataSetChanged()
-//            }
-//        }}
-
 }
